@@ -1,0 +1,60 @@
+$white: #FEFEFF;
+$green: #ACBFA4;
+$black: #000F08;
+$red: #EE3F1D;
+$orange: #F37D1D;
+
+$primary: $green;
+$warning: $orange;
+$danger: $red;
+
+$family-secondary: 'Inter', 'sans-serif';
+$family-primary: 'Space Mono', 'monospace';
+
+$card-radius: none;
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@import 'bulma/bulma.sass';
+
+.image {
+  text-align: center;
+
+  i {
+    font-size: 8rem;
+  }
+}
+
+.panel {
+  background-color: $white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+.is-fixed-top {
+  background-color: $warning !important;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar-menu {
+  background: transparent !important;
+  box-shadow: none;
+
+}
+
+.card-content .content {
+  min-height: 50px;
+}
